@@ -17,5 +17,6 @@ public class GateWayMain9527 {
         System.out.println("hello git2");
         System.out.println("hello git2 hot-fix");
         System.out.println("hello git2 master test");
+        System.out.println("hello git2 hot-fix test");
     }
 }
