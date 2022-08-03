@@ -15,5 +15,6 @@ public class GateWayMain9527 {
         SpringApplication.run(GateWayMain9527.class,args);
         System.out.println("hello git");
         System.out.println("hello git2");
+        System.out.println("hello git2 hot-fix");
     }
 }
