@@ -1,0 +1,6 @@
+server:
+  port: 9001
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: localhost
+#没有用的在9001添加配置hystrix.dashboard.proxy-stream-allow-list=localhost
