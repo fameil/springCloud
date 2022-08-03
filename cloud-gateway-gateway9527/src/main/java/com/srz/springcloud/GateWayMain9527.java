@@ -13,5 +13,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class GateWayMain9527 {
     public static void main(String[] args) {
         SpringApplication.run(GateWayMain9527.class,args);
+        System.out.println("hello git");
     }
 }
