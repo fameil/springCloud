@@ -11,8 +11,8 @@ spring:
           uri: https://github.com/fameil/springcloud-config.git
           search-paths:
             - springcloud-config
-      label: master
-
+      label: main
+#http://127.0.0.1:3344/config-dev.yml
 eureka:
   client:
     service-url:
