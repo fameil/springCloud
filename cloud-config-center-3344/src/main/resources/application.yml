@@ -10,4 +10,10 @@ spring:
         git:
           uri: git@github.com:fameil/springCloud.git
           search-paths:
-            - springCloud/springcloud-config
+            - springCloud/tree/master/springcloud-config
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
