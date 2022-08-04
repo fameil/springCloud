@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:fameil/springCloud.git
+          search-paths:
+            - springCloud/springcloud-config

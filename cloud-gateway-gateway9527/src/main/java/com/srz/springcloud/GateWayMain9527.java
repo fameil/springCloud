@@ -13,13 +13,5 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class GateWayMain9527 {
     public static void main(String[] args) {
         SpringApplication.run(GateWayMain9527.class,args);
-        System.out.println("hello git");
-        System.out.println("hello git2");
-        System.out.println("hello git2 hot-fix");
-        System.out.println("hello git2 master test");
-        System.out.println("hello git2 hot-fix test");
-        System.out.println("hello git2 hot-fix test");
-        System.out.println("hello git2 push");
-        System.out.println("hello git2 pull");
     }
 }
