@@ -8,9 +8,9 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:fameil/springCloud.git
+          uri: https://github.com/fameil/springcloud-config.git
           search-paths:
-            - springCloud/tree/master/springcloud-config
+            - springcloud-config
       label: master
 
 eureka:
