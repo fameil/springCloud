@@ -1,0 +1,41 @@
+server:
+  port: 3344
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #uri: https://github.com/fameil/cloud-config.git
+          uri: https://gitee.com/fameila/cloud-config.git
+          search-paths:
+            - cloud-config
+          timeout: 40
+          default-label: master
+      label: master
+#rabbitmq相关配置
+  rabbitmq:
+    host: 114.115.246.166
+    prot: 5672
+    username: admin
+    password: 847144514
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+
+#rabitmq
+management:
+  endpoints:
+    web:
+      exposure:
+        #include: 'bus-refresh' 旧版
+        include: 'busrefresh'

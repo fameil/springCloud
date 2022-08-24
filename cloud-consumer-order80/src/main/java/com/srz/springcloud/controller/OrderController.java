@@ -74,6 +74,13 @@ public class OrderController {
         }
     }
 
+    @GetMapping("/consumer/payment/zipkin")
+    public String zipkin(){
+        String result = restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin",String.class);
+        return result;
+    }
+
+
 /*    @GetMapping(value = "/consumer/payment/lb")
     public String getPaymentUrl(){
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");

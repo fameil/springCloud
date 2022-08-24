@@ -1,0 +1,37 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: seata-order-service
+  cloud:
+    nacos:
+      discovery:
+        #Nacos服务注册地址
+        server-addr: 114.115.246.166:8848
+  datasource:
+    username: root
+    password: 847144514
+    url: jdbc:mysql://114.115.246.166:3306/seata_order?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+feign:
+  hystrix:
+    enabled: false
+
+logging:
+  level:
+    io:
+      seata: info
+mybatis:
+  type-aliases-package: com.srz.springcloud.alibaba.domain
+  mapperLocations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+seata:
+  tx-service-group: mygroup
+  service:
+    vgroup-mapping:
+      mygroup: default
